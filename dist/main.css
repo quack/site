@@ -1,0 +1,54 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #333333;
+    color: #ECF0F1;
+    font-family: Roboto;
+}
+
+.toolbar {
+    float: right;
+    margin: 30px 50px;
+    font-size: 12px;
+}
+
+.toolbar a {
+    text-decoration: none;
+}
+
+.toolbar a div {
+    text-transform: uppercase;
+    color: #ECF0F1;
+    padding: 20px 20px;
+    margin: 0 5px;
+    display: inline-table;
+    border-radius: 4px;
+}
+
+.toolbar a div:hover {
+    background-color: #444444;
+}
+
+.toolbar a.active div {
+    background-color: #555555;
+}
+
+.toolbar a.featured div {
+    background-color: #FF5100;
+}
+
+.toolbar a.featured div:hover {
+    background-color: #FF9100;
+}
+
+.logo-container {
+    width: 100%;
+    text-align: center;
+}
+
+.logo {
+    width: 50%;
+}
