@@ -1,0 +1,10 @@
+{
+  "name": "quack-website",
+  "version": "1.0.0",
+  "description": "Official Quack website",
+  "main": "index.js",
+  "repository": "https://github.com/quack/site.git",
+  "author": "Marcelo Camargo <marcelocamargo@linuxmail.org>",
+  "license": "MIT",
+  "private": true
+}
