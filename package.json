@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "cp resources/* dist && pug src/index.pug -o dist"
+    "build": "cp resources/* dist/ && cp src/styles/main.css dist/ && pug src/index.pug -o dist"
   },
   "devDependencies": {
     "pug-cli": "1.0.0-alpha6"
