@@ -1,1 +1,17 @@
-<!DOCTYPE html><html><head><title>Quack Programming Language</title><meta charset="utf-8"><link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"><link rel="stylesheet" href="./main.css" type="text/css"></head><div class="header"><div class="toolbar"><a class="active" href="./"><div>Home</div></a><a href="./docs"><div>Documentation</div></a><a href="./repl"><div>Try online</div></a><a href="https://github.com/quack/quack"><div>GitHub</div></a><a class="featured" href="./install"><div>Install</div></a></div><div class="logo-container"><img class="logo" src="./logo.png" draggable="false"></div></div></html>
+<!DOCTYPE html><html><head><title>Quack Programming Language</title><meta charset="utf-8"><link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono"><link rel="stylesheet" href="./main.css" type="text/css"><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.31.0/codemirror.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.31.0/codemirror.css" type="text/css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.31.0/theme/paraiso-light.min.css" type="text/css"><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.31.0/mode/swift/swift.min.js"></script></head><div class="header"><div class="toolbar"><a class="active" href="./"><div>Home</div></a><a href="./docs"><div>Documentation</div></a><a href="./repl"><div>Try online</div></a><a href="https://github.com/quack/quack"><div>GitHub</div></a><a class="featured" href="./install"><div>Install</div></a></div></div><div class="logo-container"><img class="logo" src="./logo.png" draggable="false"></div><div class="quack-code-container"><center><div class="quack-code"><textarea>from console import {write}
+
+fn fact(n :: Number): Number :- n = 0
+    then 1
+    else n * fact(n - 1)
+
+effect main
+    do 5
+    | fact
+    | &result: write('Factorial of 5 is ' + result.show())
+end
+</textarea></div></center></div><script type="text/javascript">var textarea = document.querySelector('.quack-code textarea');
+var editor = CodeMirror.fromTextArea(textarea, {
+    mode: 'swift',
+    theme: 'paraiso-light',
+    readOnly: true
+});</script></html>

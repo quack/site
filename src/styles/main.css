@@ -10,7 +10,7 @@ body {
 }
 
 .toolbar {
-    float: right;
+    text-align: right;
     margin: 30px 50px;
     font-size: 12px;
 }
@@ -45,10 +45,33 @@ body {
 }
 
 .logo-container {
+    margin-top: 80px;
     width: 100%;
+    margin-bottom: 40px;
     text-align: center;
 }
 
 .logo {
-    width: 50%;
+    width: 40%;
+    text-align: center;
+}
+
+.quack-code-container {
+    width: 100%;
+    text-align: center;
+}
+
+.quack-code {
+    width: 700px;
+    text-align: left;
+    border-radius: 6px;
+    background-color: #E7E9DB;
+    padding: 5px;
+}
+
+.CodeMirror {
+    height: 190px !important;
+    overflow: hidden !important;
+    font-family: 'Roboto Mono', monospace !important;
+    font-size: 12px;
 }

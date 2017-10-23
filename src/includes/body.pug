@@ -11,5 +11,29 @@
         a(href='./install').featured
             div Install
 
-    .logo-container
-        img(src='./logo.png' draggable='false').logo
+.logo-container
+    img(src='./logo.png' draggable='false').logo
+
+.quack-code-container
+    center
+        .quack-code
+            textarea.
+                from console import {write}
+
+                fn fact(n :: Number): Number :- n = 0
+                    then 1
+                    else n * fact(n - 1)
+
+                effect main
+                    do 5
+                    | fact
+                    | &result: write('Factorial of 5 is ' + result.show())
+                end
+
+script(type='text/javascript').
+    var textarea = document.querySelector('.quack-code textarea');
+    var editor = CodeMirror.fromTextArea(textarea, {
+        mode: 'swift',
+        theme: 'paraiso-light',
+        readOnly: true
+    });
