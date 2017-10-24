@@ -30,6 +30,51 @@
                     | &result: write('Factorial of 5 is ' + result.show())
                 end
 
+.paper
+    h1 Install Quack
+    .install
+        div wget -qO- http://bit.do/get-quack | sudo bash
+
+    h1 What is Quack?
+    center
+        .paper-content.
+            Quack is a general purpose programming language with gradual and duck typing that aims to solve
+            the problems of most modern programming languages. It embeds a powerful type system that tries
+            to warrant in compile time that your program will not crash.
+
+    h1 Why Quack?
+        .why-quack
+            .why-quack-row
+                .why-quack-item
+                    h2 Friendly messages
+                    div
+                        | Quack is your friend. It provides human error messages and, generally, is
+                        | very lovely with you.
+                .why-quack-item
+                    h2 No exceptions
+                    div
+                        | The type system can prove the absence of runtime exceptions and uses monads
+                        | to handle errors. Workarounds are caught in compile time.
+                .why-quack-item
+                    h2 Multiple runtimes
+                    div
+                        | Quack compiles down to several virtual machines and runtimes. It can run
+                        | on Node, Apache PHP or compile to binary itself.
+
+            .why-quack-row
+                .why-quack-item
+                    h2 Small compiler
+                    div
+                        | Quack compiler <i>lite</i> is just 100KB and runs on top of PHP,
+                        | without needing to compile or build anything else. You can install it in less than 1 second.
+
+                .why-quack-item
+                    h2 Functional abstraction
+                    div
+                        | Inspired by Haskell, abstractions are made on top of the type system. Quack
+                        | supports algebraic data types, row types, effects, typeclasses and has a subset of Hindley-Milner for
+                        | type inference.
+
 script(type='text/javascript').
     var textarea = document.querySelector('.quack-code textarea');
     var editor = CodeMirror.fromTextArea(textarea, {
